@@ -1,5 +1,5 @@
 def main():
-    frac = input("Fraction: ").split("/")
+    frac = input("Fraction: ").split("/") #edited on ghub
     print(eval(frac))
 
 def eval(frac):
