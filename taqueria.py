@@ -1,0 +1,29 @@
+def main():
+        added=0
+        while True:
+            try:
+                items=input("Item: ").title()
+
+                f_items= {
+                "Baja Taco": 4.25,
+                "Burrito": 7.50,
+                "Bowl": 8.50,
+                "Nachos": 11.00,
+                "Quesadilla": 8.50,
+                "Super Burrito": 8.50,
+                "Super Quesadilla": 9.50,
+                "Taco": 3.00,
+                "Tortilla Salad": 8.00
+                }
+
+                if items in f_items:
+                    value=f_items[items]
+                    added= added+value
+                    bill=f"Total ${added:.2f}"
+                    print(bill)
+            except EOFError:
+                 print(f"\nTotal ${added:.2f}")
+                 break
+
+
+main()
