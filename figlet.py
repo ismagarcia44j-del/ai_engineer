@@ -3,8 +3,6 @@ def main():
     import random
     from pyfiglet import Figlet
     figlet = Figlet()
-
-    
     ls_fonts=figlet.getFonts()
 
     try:
@@ -20,7 +18,7 @@ def main():
         else:
             f=random.choice(ls_fonts)
 
-        inp= input("Input: ")
+        inp= input("Input : ")
         figlet.setFont(font=f)
         print(f"Output: \n{figlet.renderText(inp)}")
     except Exception:
